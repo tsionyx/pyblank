@@ -1,0 +1,8 @@
+include LICENSE
+recursive-include . *.md
+
+# do the same if you want to include something in your source distribution
+#recursive-include examples *.txt
+#recursive-include docs/images/ *.gif
+
+prune ./build
