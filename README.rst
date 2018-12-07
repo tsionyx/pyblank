@@ -92,8 +92,8 @@ Usage
 
     git init
     git add .
-    git commit -m 'initial commit'
-    git tag -a v0.0.1 -m 'initial project structure'
+    git commit -m 'init with pyblank (https://github.com/tsionyx/pyblank)'
+    git tag -a v0.0.0 -m 'initial project structure'
 
     pycharm.sh .
 
