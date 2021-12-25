@@ -93,7 +93,7 @@ Usage
     sed "s/1970-01-01/$(date +'%Y-%m-%d')/" -i CHANGELOG.md
 
     # fill in the project metadata
-    vim setup.py
+    # vim setup.py
 
     git init
     git add .
