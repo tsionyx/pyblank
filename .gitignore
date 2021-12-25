@@ -1,7 +1,7 @@
 *.pyc
 
-+# Jupyter Notebook
-+.ipynb_checkpoints
+# Jupyter Notebook
+.ipynb_checkpoints
 
 # vim temporary
 *.swp
@@ -15,6 +15,9 @@
 
 # virtualenv
 .env/
+# the file created by `pyenv local` command
+.python-version
+
 
 # tests artifacts
 .noseids

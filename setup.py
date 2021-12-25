@@ -41,8 +41,8 @@ NAME = 'pyblank'
 DESCRIPTION = 'Blank Python Project'
 URL = 'https://github.com/{}/{}'.format(ME, NAME),
 EMAIL = '{}@gmail.com'.format(ME)
-AUTHOR = 'The Name Goes Here'
-LICENSE = 'MIT License',
+AUTHOR = ME
+LICENSE = 'MIT License'
 
 REQUIRED = [
     'six',
