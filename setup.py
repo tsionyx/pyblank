@@ -82,7 +82,7 @@ CLASSIFIERS = [
 
 # Load the package's __version__.py module as a dictionary.
 about = {}
-exec(read_file(os.path.join(NAME, '__version__.py')), about)
+exec(read_file(os.path.join(NAME.replace('-', '_'), '__version__.py')), about)
 
 VERSION = about['__version__']
 DOWNLOAD_URL = 'https://pypi.python.org/pypi/{}/{}'.format(NAME, VERSION),

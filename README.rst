@@ -78,10 +78,15 @@ Usage
     git clone https://github.com/tsionyx/pyblank.git $PROJ && cd $PROJ
     rm -rf .git
 
-    mv pyblank/ $PROJ/
+    PROJ_WITH_UNDERSCORES=$(echo $PROJ | tr - _)
+    mv pyblank/ $PROJ_WITH_UNDERSCORES/
     mv .idea/pyblank.iml .idea/${PROJ}.iml
-    for f in .idea/${PROJ}.iml .idea/modules.xml .idea/dictionaries/project.xml .gitlab-ci.yml .travis.yml setup.py tests/test_example.py; do
+    for f in .idea/${PROJ}.iml .idea/modules.xml .idea/dictionaries/project.xml .gitlab-ci.yml .travis.yml setup.py; do
         sed "s/pyblank/$PROJ/g" -i ${f}
+    done
+
+    for f in tests/*.py; do
+        sed "s/pyblank/$PROJ_WITH_UNDERSCORES/g" -i ${f}
     done
 
     echo -e "$PROJ\n=====" > README.rst
